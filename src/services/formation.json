@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "formation": "Técnico de Informática",
+        "institute": "E.E.E.P. Venceslau Vieira Batista",
+        "status": "Concluído",
+        "colorStatus": "#00ff0a",
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "begin": "02/2016",
+        "end": "12/2018"
+    },
+    {
+        "id": 2,
+        "formation": "Ciência da Computação",
+        "institute": "Universidade Federal do Ceará",
+        "status": "Interrompido",
+        "colorStatus": "#FF0000",
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "begin": "02/2019",
+        "end": "12/2024"
+    },
+    {
+        "id": 3,
+        "formation": "Análise e Desenvolvimento de Sistemas",
+        "institute": "Unifael",
+        "status": "Em andamento",
+        "colorStatus": "#FFF500",
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "begin": "03/2023",
+        "end": "06/2024"
+    }
+]
