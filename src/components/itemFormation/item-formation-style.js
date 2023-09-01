@@ -71,3 +71,23 @@ export const DateFormation = styled.label`
   font-size: 12px;
   color: #ffffff;
 `;
+
+export const ContainerDescriptionInformation = styled.div`
+  position: relative;
+  top: 20px;
+  left: 10px;
+  display: ${({ expanded }) => (expanded ? "flex" : "none")};
+  width: 312px;
+  height: 60px;
+`;
+
+export const TitleDescription = styled.label`
+  font-family: "Noto Sans Gujarati UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+`;

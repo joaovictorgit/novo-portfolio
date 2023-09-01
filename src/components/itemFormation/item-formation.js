@@ -1,11 +1,13 @@
 import { useState } from "react";
 import {
   ContainerDateFormation,
+  ContainerDescriptionInformation,
   ContainerTitleFormation,
   DateFormation,
   InstituteFormation,
   ItemInformationFormation,
   TextStatusFormation,
+  TitleDescription,
   TitleFormation,
 } from "./item-formation-style";
 
@@ -16,6 +18,7 @@ const ItemFormation = ({
   institute,
   status,
   statusColor,
+  description,
   begin,
   end,
 }) => {
@@ -38,6 +41,9 @@ const ItemFormation = ({
       <TextStatusFormation expanded={expanded} statusColor={statusColor}>
         {status}
       </TextStatusFormation>
+      <ContainerDescriptionInformation expanded={expanded}>
+        <TitleDescription>Descrição: {description}</TitleDescription>
+      </ContainerDescriptionInformation>
     </ItemInformationFormation>
   );
 };

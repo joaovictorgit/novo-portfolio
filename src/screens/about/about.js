@@ -14,6 +14,7 @@ import Image from "../../assets/fundo-grade-digital.png";
 import ItemFormation from "../../components/itemFormation/item-formation";
 import Formations from "../../services/formation.json";
 import Perfil from "../../assets/perfil-curto.png";
+import ItemSkill from "../../components/itemSkills/item-skill";
 
 const About = () => {
   return (
@@ -33,6 +34,7 @@ const About = () => {
               institute={f.institute}
               status={f.status}
               statusColor={f.colorStatus}
+              description={f.description}
               begin={f.begin}
               end={f.end}
             />
@@ -45,6 +47,7 @@ const About = () => {
             <TitleInformations>Habilidades</TitleInformations>
             <Line width="255px" />
           </ContainerTitle>
+          <ItemSkill icon="scrum.png" />
         </ContainerSkills>
       </ContainerAboutInformations>
       <ContainerPolygon>
