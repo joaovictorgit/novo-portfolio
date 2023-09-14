@@ -4,14 +4,15 @@ import {
   ContainerDescriptionInformation,
   ContainerTitleFormation,
   DateFormation,
+  ImageFormation,
   InstituteFormation,
   ItemInformationFormation,
   TextStatusFormation,
   TitleDescription,
   TitleFormation,
 } from "./item-formation-style";
-
-import { MdSchool } from "react-icons/md";
+import EP from "../../assets/ep.jpg";
+import Unifael from "../../assets/unifael.jpeg";
 
 const ItemFormation = ({
   formation,
@@ -30,14 +31,19 @@ const ItemFormation = ({
   return (
     <ItemInformationFormation expanded={expanded} onClick={toggleExpand}>
       <ContainerTitleFormation>
-        <MdSchool size={24} color="#ffffff" />
-        <TitleFormation>{formation}</TitleFormation>
+        <ImageFormation
+          src={status === "Concluído" ? EP : Unifael}
+          alt="Instituição"
+        />
+        <InstituteFormation>Instituição: {institute}</InstituteFormation>
       </ContainerTitleFormation>
       <ContainerDateFormation>
         <DateFormation>Início: {begin}</DateFormation>
         <DateFormation>Fim: {end}</DateFormation>
       </ContainerDateFormation>
-      <InstituteFormation>Instituição: {institute}</InstituteFormation>
+      <ContainerTitleFormation>
+        <TitleFormation> Área: {formation}</TitleFormation>
+      </ContainerTitleFormation>
       <TextStatusFormation expanded={expanded} statusColor={statusColor}>
         {status}
       </TextStatusFormation>

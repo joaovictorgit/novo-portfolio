@@ -2,7 +2,9 @@ import Header from "../../components/header/header";
 import {
   ContainerAbout,
   ContainerAboutInformations,
+  ContainerCourses,
   ContainerFormation,
+  ContainerMenuSkills,
   ContainerPolygon,
   ContainerSkills,
   ContainerTitle,
@@ -10,11 +12,13 @@ import {
   Line,
   TitleInformations,
 } from "./about-style";
-import Image from "../../assets/fundo-grade-digital.png";
+import Image from "../../assets/fundo02.jpg";
 import ItemFormation from "../../components/itemFormation/item-formation";
 import Formations from "../../services/formation.json";
+import Skills from "../../services/skills.json";
 import Perfil from "../../assets/perfil-curto.png";
 import ItemSkill from "../../components/itemSkills/item-skill";
+import ItemCourses from "../../components/itemCourses/item-courses";
 
 const About = () => {
   return (
@@ -47,8 +51,25 @@ const About = () => {
             <TitleInformations>Habilidades</TitleInformations>
             <Line width="255px" />
           </ContainerTitle>
-          <ItemSkill icon="scrum.png" />
+          <ContainerMenuSkills>
+            {Skills.map((skill) => (
+              <ItemSkill
+                key={skill.id}
+                icon={skill.icon}
+                titleSkill={skill.titleSkill}
+                subtitle={skill.subtitle}
+                typeSkill={skill.typeSkill}
+              />
+            ))}
+          </ContainerMenuSkills>
         </ContainerSkills>
+        <ContainerTitle>
+          <TitleInformations>Cursos</TitleInformations>
+          <Line width="242px" />
+        </ContainerTitle>
+        <ContainerCourses>
+          <ItemCourses />
+        </ContainerCourses>
       </ContainerAboutInformations>
       <ContainerPolygon>
         <ImagePolygon alt="Perfil" src={Perfil} />

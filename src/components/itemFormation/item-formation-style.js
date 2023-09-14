@@ -3,8 +3,9 @@ import { styled } from "styled-components";
 export const ItemInformationFormation = styled.div`
   width: 510px;
   height: ${({ expanded }) => (expanded ? "262px" : "114px")};
-  background: #499499;
-  border-left: 10px solid #12a1de;
+  background: #ffffff; //#499499;
+  border-left: 5px solid #12a1de;
+  border-radius: 10px;
   cursor: pointer;
 `;
 
@@ -16,35 +17,42 @@ export const ContainerTitleFormation = styled.div`
   margin-left: 10px;
 `;
 
+export const ImageFormation = styled.img`
+  width: 30px;
+  height: 34px;
+  border-radius: 50%;
+`;
+
 export const TitleFormation = styled.label`
-  font-family: "Noto Sans Gujarati UI";
+  font-family: "Noto Sans Gujarati UI", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 25px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #000;
+  position: relative;
+  left: 40px;
+  top: -15px;
 `;
 
 export const InstituteFormation = styled.label`
-  margin-left: 10px;
-  margin-top: 20px;
-  font-family: "Noto Sans Gujarati UI";
+  font-family: "Noto Sans Gujarati UI", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #000;
 `;
 
 export const TextStatusFormation = styled.label`
   position: relative;
-  top: ${({ expanded }) => (expanded ? "150px" : "5px")};
+  top: ${({ expanded }) => (expanded ? "150px" : "-5px")};
   right: 10px;
-  font-family: "Noto Sans Gujarati UI";
+  font-family: "Noto Sans Gujarati UI", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -56,7 +64,7 @@ export const TextStatusFormation = styled.label`
 `;
 
 export const ContainerDateFormation = styled.div`
-  width: 83px;
+  width: 93px;
   height: 32px;
   display: flex;
   flex-direction: column;
@@ -65,29 +73,29 @@ export const ContainerDateFormation = styled.div`
 `;
 
 export const DateFormation = styled.label`
-  font-family: "Noto Sans Gujarati UI";
+  font-family: "Noto Sans Gujarati UI", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  color: #ffffff;
+  color: #000;
 `;
 
 export const ContainerDescriptionInformation = styled.div`
   position: relative;
-  top: 20px;
-  left: 10px;
+  top: 25px;
+  left: 20px;
   display: ${({ expanded }) => (expanded ? "flex" : "none")};
   width: 312px;
   height: 60px;
 `;
 
 export const TitleDescription = styled.label`
-  font-family: "Noto Sans Gujarati UI";
+  font-family: "Noto Sans Gujarati UI", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #000;
 `;

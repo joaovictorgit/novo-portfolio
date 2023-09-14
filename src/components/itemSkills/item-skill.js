@@ -10,13 +10,13 @@ import {
 const ItemSkill = ({ icon, titleSkill, subtitle, typeSkill }) => {
   return (
     <ContainerItemSkills>
-      <IdentifierSkill>Soft-skill</IdentifierSkill>
+      <IdentifierSkill>{typeSkill}</IdentifierSkill>
       <ContainerIcon>
         <img src={require(`../../assets/${icon}`)} alt="icon" />
       </ContainerIcon>
-      <TitleSkill>Metodologias ágeis</TitleSkill>
+      <TitleSkill>{titleSkill}</TitleSkill>
       <ContainerSubtitle>
-        <SubtitleSkill>asdaddddddddddddddddddsdsasdasdd</SubtitleSkill>
+        <SubtitleSkill>{subtitle}</SubtitleSkill>
       </ContainerSubtitle>
     </ContainerItemSkills>
   );

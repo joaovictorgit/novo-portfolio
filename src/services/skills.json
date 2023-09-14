@@ -1,9 +1,100 @@
 [
     {
         "id": 1,
+        "icon": "js.png",
+        "titleSkill": "JavaScript",
+        "subtitle": "Manipulação de strings, arrays e objetos. conceitos de funções de ordem superior, etc.",
+        "typeSkill": "Hard-skill"
+    },
+    {
+        "id": 2,
+        "icon": "node.png",
+        "titleSkill": "Node.js",
+        "subtitle": "Uso de módulos e pacotes NPM, criação de módulos Node.js reutilizáveis para organizar o código.",
+        "typeSkill": "Hard-skill"
+    },
+    {
+        "id": 3,
+        "icon": "ts.png",
+        "titleSkill": "TypeScript",
+        "subtitle": "Manipulação de strings, arrays e objetos. conceitos de funções de ordem superior, etc.",
+        "typeSkill": "Hard-skill"
+    },
+    {
+        "id": 4,
+        "icon": "rn.png",
+        "titleSkill": "React Native",
+        "subtitle": "Uso de componentes funcionais e de classe, ciclo de vida dos componentes, navegação.",
+        "typeSkill": "Hard-skill"
+    },
+    {
+        "id": 5,
         "icon": "scrum.png",
-        "titleSkill": "Metodologias ágeis",
-        "subtitle": "",
-        "typeSkill": ""
+        "titleSkill": "Integração APIs",
+        "subtitle": "Integração de bibliotecas de terceiros para funcionalidades específicas da plataforma.",
+        "typeSkill": "Hard-skill"
+    },
+    {
+        "id": 6,
+        "icon": "ge.png",
+        "titleSkill": "Gerenciamento de Estado",
+        "subtitle": "Implementação de gerenciamento de estado com Redux ou Context API.",
+        "typeSkill": "Hard-skill"
+    },
+    {
+        "id": 7,
+        "icon": "sql.png",
+        "titleSkill": "Banco de Dados Local",
+        "subtitle": "Uso de PostgreSQL ou outras bibliotecas para persistência de dados local.",
+        "typeSkill": "Hard-skill"
+    },
+    {
+        "id": 8,
+        "icon": "ss.png",
+        "titleSkill": "Comunicação Eficaz",
+        "subtitle": "Comunicação de ideias de forma clara e concisa, tanto oralmente quanto por escrito. ",
+        "typeSkill": "Soft-skill"
+    },
+    {
+        "id": 9,
+        "icon": "ss.png",
+        "titleSkill": "Trabalho em Equipe",
+        "subtitle": "Capacidade de colaborar efetivamente com designers, desenvolvedores, gerentes de projeto, etx.",
+        "typeSkill": "Soft-skill"
+    },
+    {
+        "id": 10,
+        "icon": "ss.png",
+        "titleSkill": "Resolução de Problemas",
+        "subtitle": "Habilidade de identificar e abordar problemas no código e no processo de desenvolvimento.",
+        "typeSkill": "Soft-skill"
+    },
+    {
+        "id": 11,
+        "icon": "ss.png",
+        "titleSkill": "Adaptabilidade",
+        "subtitle": "Capacidade de se ajustar a mudanças na tecnologia, requisitos do projeto e prazos.",
+        "typeSkill": "Soft-skill"
+    },
+    {
+        "id": 12,
+        "icon": "ss.png",
+        "titleSkill": "Criatividade e Inovação",
+        "subtitle": "Pensamento criativo ao desenvolver soluções inovadoras para problemas.",
+        "typeSkill": "Soft-skill"
+    },
+    {
+        "id": 13,
+        "icon": "ss.png",
+        "titleSkill": "Ética Profissional",
+        "subtitle": "Age com integridade, mantendo altos padrões éticos no desenvolvimento de software.",
+        "typeSkill": "Soft-skill"
+    },
+    {
+        "id": 14,
+        "icon": "ss.png",
+        "titleSkill": "Automotivação",
+        "subtitle": "Capacidade de se manter motivado e produtivo, mesmo em situações desafiadoras.",
+        "typeSkill": "Soft-skill"
     }
 ]

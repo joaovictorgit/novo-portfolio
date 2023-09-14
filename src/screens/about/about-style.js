@@ -8,7 +8,8 @@ export const ContainerAbout = styled.div`
   height: 100vh;
   z-index: -1;
   transform: rotate(180deg);
-  background-image: url(${(props) => props.image});
+  background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.5)),
+    url(${(props) => props.image});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,8 +45,8 @@ export const TitleInformations = styled.label`
 
 export const Line = styled.div`
   width: ${(props) => props.width};
-  height: 5px;
-  background: linear-gradient(45deg, #ffffff 0%, #00a1fc 100%);
+  height: 3px;
+  background: #ffffff;
   border-radius: 10px;
 `;
 
@@ -55,7 +56,7 @@ export const ContainerPolygon = styled.div`
   height: 352px;
   left: 70%;
   top: 25%;
-  background: linear-gradient(180deg, #00a1fc 0%, rgba(0, 161, 252, 0) 100%);
+  background: linear-gradient(180deg, #00a1fc 25%, rgba(0, 161, 252, 0) 100%);
   border-radius: 180px 180px 180px 50px;
 `;
 
@@ -72,4 +73,17 @@ export const ContainerSkills = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+`;
+
+export const ContainerMenuSkills = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  gap: 10px;
+`;
+
+export const ContainerCourses = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-bottom: 20px;
 `;
