@@ -19,7 +19,7 @@ const Header = () => {
       <ContainerHeader>
         <TextMenu onClick={() => navigation("/")}>Home</TextMenu>
         <TextMenu>Portfolio</TextMenu>
-        <TextMenu onClick={() => openModal()}>Contact</TextMenu>
+        <TextMenu onClick={() => openModal()}>Contato</TextMenu>
       </ContainerHeader>
       <ContactModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
     </>

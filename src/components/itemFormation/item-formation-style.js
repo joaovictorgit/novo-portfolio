@@ -3,9 +3,10 @@ import { styled } from "styled-components";
 export const ItemInformationFormation = styled.div`
   width: 510px;
   height: ${({ expanded }) => (expanded ? "262px" : "114px")};
-  background: #ffffff; //#499499;
+  background: #393939; //#1d1d1d; //#499499;
   border-left: 5px solid #12a1de;
-  border-radius: 10px;
+  //box-shadow: 1px 1px 1px 1px #909090;
+  border-radius: 5px;
   cursor: pointer;
 `;
 
@@ -18,9 +19,9 @@ export const ContainerTitleFormation = styled.div`
 `;
 
 export const ImageFormation = styled.img`
-  width: 30px;
+  width: 34px;
   height: 34px;
-  border-radius: 50%;
+  //border-radius: 50%;
 `;
 
 export const TitleFormation = styled.label`
@@ -31,7 +32,7 @@ export const TitleFormation = styled.label`
   line-height: 25px;
   display: flex;
   align-items: center;
-  color: #000;
+  color: #fff;
   position: relative;
   left: 40px;
   top: -15px;
@@ -45,7 +46,7 @@ export const InstituteFormation = styled.label`
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #000;
+  color: #fff;
 `;
 
 export const TextStatusFormation = styled.label`
@@ -77,7 +78,7 @@ export const DateFormation = styled.label`
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  color: #000;
+  color: #fff;
 `;
 
 export const ContainerDescriptionInformation = styled.div`
@@ -97,5 +98,5 @@ export const TitleDescription = styled.label`
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #000;
+  color: #fff;
 `;

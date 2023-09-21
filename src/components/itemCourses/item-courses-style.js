@@ -4,8 +4,9 @@ export const ContainerItemCourses = styled.div`
   display: flex;
   flex-direction: column;
   width: 450px;
-  height: 87px;
-  background: #ffffff;
+  height: 80px;
+  background: #393939;
+  border-radius: 5px;
 `;
 
 export const ContainerDurationCourses = styled.div`
@@ -20,7 +21,7 @@ export const ContainerDurationCourses = styled.div`
   font-weight: 400;
   font-size: 12px;
   line-height: 11px;
-  color: #000000;
+  color: #ffffff;
 `;
 
 export const ContainerCalendar = styled.div`
@@ -43,7 +44,11 @@ export const ContainerNameCourse = styled.div`
 export const ContainerImageNameCourse = styled.div`
   width: 35px;
   height: 35px;
-  background-color: #d9d9d9;
+`;
+
+export const LogoInstitute = styled.img`
+  width: 35px;
+  height: 35px;
 `;
 
 export const ContainerTextsNameCourse = styled.div`
@@ -52,12 +57,14 @@ export const ContainerTextsNameCourse = styled.div`
 `;
 
 export const TextNameCourse = styled.label`
+  width: 250px;
   font-family: "Noto Sans Gujarati UI", sans-serif;
+  overflow-wrap: break-word;
   font-style: normal;
   font-weight: ${({ weight }) => weight};
   font-size: ${({ size }) => size};
   line-height: 19px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #ffffff;
 `;

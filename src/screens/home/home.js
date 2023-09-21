@@ -29,7 +29,7 @@ const Home = () => {
           React Native, dedico-me a criar aplicativos incríveis e de alto
           desempenho para iOS e Android, utilizando React Native.
         </TextInformation>
-        <ButtonAbout onClick={() => navigation("/about")}>About</ButtonAbout>
+        <ButtonAbout onClick={() => navigation("/about")}>Sobre</ButtonAbout>
       </ContainerInformationHome>
       <ContainerPolygon>
         <ImagePolygon alt="Perfil" src={Perfil} />

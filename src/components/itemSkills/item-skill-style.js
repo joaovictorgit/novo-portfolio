@@ -6,7 +6,7 @@ export const ContainerItemSkills = styled.div`
   row-gap: 10px;
   width: 142px;
   height: 154px;
-  background: #fffefe;
+  background: #393939;
   border-top: 3px solid #12a1de;
 `;
 
@@ -23,7 +23,7 @@ export const TitleSkill = styled.label`
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #ffffff;
   margin-left: 8px;
 `;
 
@@ -39,9 +39,9 @@ export const ContainerSubtitle = styled.div`
 export const SubtitleSkill = styled.label`
   font-family: "IBM Plex Sans Devanagari";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 10px;
-  color: #000000;
+  color: #ffffff;
 `;
 
 export const IdentifierSkill = styled.label`
@@ -52,5 +52,5 @@ export const IdentifierSkill = styled.label`
   font-style: normal;
   font-weight: 900;
   font-size: 10px;
-  color: #000000;
+  color: #ffffff;
 `;

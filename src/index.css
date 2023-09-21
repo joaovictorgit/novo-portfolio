@@ -21,9 +21,14 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #68ecfe;
+  /*
+  background: #68ecfe;*/
+  background: #00f;
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  /*
   background: #68ecfea9;
+  */
+  background: #20b2aa;
 }
