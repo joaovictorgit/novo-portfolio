@@ -39,6 +39,8 @@ export const ContainerImageLogo = styled.div`
 `;
 
 export const ConstainerSocialNetWorks = styled.div`
+  position: relative;
+  top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -122,6 +124,8 @@ export const SubTextInfoCard = styled.p`
 `;
 
 export const ContainerButtonCV = styled.div`
+  position: relative;
+  top: -10px;
   width: 190px;
   height: 50px;
   display: flex;
@@ -207,6 +211,31 @@ export const ContainerCourses = styled.div`
   row-gap: 30px;
   margin-bottom: 20px;
   margin-top: 20px;
+`;
+
+export const ContainerPolygon = styled.div`
+  position: relative;
+  width: 258px;
+  height: 252px;
+  top: 15px;
+  //left: 70%;
+  //top: 25%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 25%, #525556 76.04%);
+  //background: linear-gradient(180deg, #00a1fc 25%, rgba(0, 161, 252, 0) 100%);
+  //background: linear-gradient(180deg, #34454f 61.46%, rgba(0, 0, 0, 0) 100%);
+  //border-radius: 180px 180px 180px 50px;
+  border-radius: 180px 180px 180px 50px;
+  transform: rotate(-90deg);
+`;
+
+export const ImagePolygon = styled.img`
+  object-fit: cover;
+  width: 257px;
+  height: 248px;
+  border-radius: 300px 180px 180px 500px;
+  transform: rotate(90deg);
+  margin-left: -5px;
+  margin-top: -15px;
 `;
 
 /*

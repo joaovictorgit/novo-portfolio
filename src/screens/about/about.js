@@ -7,14 +7,15 @@ import {
   ContainerCourses,
   ContainerFormation,
   ContainerIconInfoCard,
-  ContainerImageLogo,
   ContainerInfoCard,
   ContainerInfomationAbout,
   ContainerMenuSkills,
   ContainerOtherContacts,
+  ContainerPolygon,
   ContainerSkills,
   ContainerSubContacts,
   ContainerTitle,
+  ImagePolygon,
   Line,
   LineHorizon,
   SubTextInfoCard,
@@ -24,7 +25,7 @@ import {
   TitleInformations,
 } from "./about-style";
 import Header from "../../components/header/header";
-import Perfil from "../../assets/perfil.jpeg";
+import Perfil from "../../assets/perfil-curto.png";
 import Formations from "../../services/formation.json";
 import ItemFormation from "../../components/itemFormation/item-formation";
 import Skills from "../../services/skills.json";
@@ -55,12 +56,15 @@ const socialNetworks = [
   },
 ];
 const About = () => {
+  //<ContainerImageLogo image={Perfil} />
   return (
     <div>
       <Header />
       <ContainerAbout>
         <ContainerAboutInformation>
-          <ContainerImageLogo image={Perfil} />
+          <ContainerPolygon>
+            <ImagePolygon src={Perfil} />
+          </ContainerPolygon>
           <ConstainerSocialNetWorks>
             {socialNetworks.map((network) => (
               <BtnSocialNetWorks
