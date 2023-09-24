@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -21,14 +22,14 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
+  background: #20b2aa;
   /*
   background: #68ecfe;*/
-  background: #00f;
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  background: #00f;
   /*
   background: #68ecfea9;
   */
-  background: #20b2aa;
 }

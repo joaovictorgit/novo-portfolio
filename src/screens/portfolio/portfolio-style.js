@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const ContainerPortfolio = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
   background: #1f2221;
-  padding-bottom: 180px;
+  padding-bottom: 100%;
 `;
 
 export const ContainerTitlePortfolio = styled.div`
@@ -34,4 +35,13 @@ export const LinePortfolio = styled.div`
   width: 464px;
   height: 3px;
   transform: rotate(0.25deg);
+`;
+
+export const ContainerProjects = styled.div`
+  position: relative;
+  left: 90px;
+  top: 220px;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 20px;
 `;
