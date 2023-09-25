@@ -53,7 +53,7 @@ export const TitleInformation = styled.label`
 export const TextInformation = styled.label`
   width: 750px;
   height: 100px;
-  font-family: "Noto Sans Gujarati";
+  font-family: "Noto Sans Gujarati", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;

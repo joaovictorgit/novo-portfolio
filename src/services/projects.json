@@ -3,6 +3,11 @@
         "id": 1,
         "title": "App Android - To do List",
         "description": "Application, developed with React Native, that performs a simple CRUD of a to-do list using Firebase.",
+        "images": [
+            "list-tasks/01.png",
+            "list-tasks/02.png"
+        ],
+        "type": "app",
         "technologies": [
             {
                 "name": "TbBrandJavascript",
@@ -28,8 +33,12 @@
     },
     {
         "id": 2,
-        "title": "App Android - To do List",
-        "description": "Application, developed with React Native, that performs a simple CRUD of a to-do list using Firebase.",
+        "title": "App Android - Send Mails",
+        "description": "Front-End application, developed in React Native, which uses requests created from the Send-Email API, to send messages to an email list.",
+        "images": [
+            "send-mail/03.png"
+        ],
+        "type": "app",
         "technologies": [
             {
                 "name": "TbBrandJavascript",
@@ -47,17 +56,31 @@
                 "backgroundColor": "#61DBFB"
             },
             {
-                "name": "BiLogoFirebase",
+                "name": "BiLogoTypescript",
                 "id": "bi",
-                "backgroundColor": "#FFA611"
+                "backgroundColor": "#358EF1"
             }
         ]
     },
     {
         "id": 3,
-        "title": "App Android - To do List",
-        "description": "Application, developed with React Native, that performs a simple CRUD of a to-do list using Firebase.",
+        "title": "Web Application - NetMovie",
+        "description": "Application, developed in React Js, of a film and series platform that uses The Movie Database api.",
+        "images": [
+            "net-movie/netmovie.gif"
+        ],
+        "type": "web",
         "technologies": [
+            {
+                "name": "FaHtml5",
+                "id": "fa",
+                "backgroundColor": "#f06529"
+            },
+            {
+                "name": "BiLogoCss3",
+                "id": "bi",
+                "backgroundColor": "#1383db"
+            },
             {
                 "name": "TbBrandJavascript",
                 "id": "tb",
@@ -71,12 +94,7 @@
             {
                 "name": "FaReact",
                 "id": "fa",
-                "backgroundColor": "#61DBFB"
-            },
-            {
-                "name": "BiLogoFirebase",
-                "id": "bi",
-                "backgroundColor": "#FFA611"
+                "backgroundColor": "#88dded"
             }
         ]
     },
@@ -84,6 +102,11 @@
         "id": 4,
         "title": "App Android - To do List",
         "description": "Application, developed with React Native, that performs a simple CRUD of a to-do list using Firebase.",
+        "images": [
+            "list-tasks/01.png",
+            "list-tasks/02.png"
+        ],
+        "type": "app",
         "technologies": [
             {
                 "name": "TbBrandJavascript",

@@ -11,9 +11,28 @@ export const ContainerItemProject = styled.div`
   flex-direction: column;
 `;
 
+export const ContainerImageItemProject = styled.div`
+  position: relative;
+  left: -20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 247px;
+`;
+
+export const ImageItemProject = styled.img`
+  width: ${({ widthImage }) => widthImage};
+  height: ${({ heightImage }) => heightImage};
+  position: relative;
+  top: 5px;
+  left: 20px;
+`;
+
 export const LineItemProject = styled.div`
   position: relative;
-  top: 180px;
+  top: ${({ topImage }) => topImage};
   width: 247px;
   height: 3px;
   background-color: #8b8b8f;
@@ -22,7 +41,7 @@ export const LineItemProject = styled.div`
 
 export const ContainerDescriptionItemProject = styled.div`
   position: relative;
-  top: 190px;
+  top: ${({ topImage }) => topImage};
   display: flex;
   flex-direction: column;
   row-gap: 5px;
@@ -41,6 +60,7 @@ export const TitleDescriptionItemProject = styled.h1`
 `;
 
 export const TextDescriptionItemProject = styled.label`
+  width: 200px;
   position: relative;
   left: 18px;
   top: -15px;
@@ -52,9 +72,9 @@ export const TextDescriptionItemProject = styled.label`
 `;
 
 export const ContainerTechnologies = styled.div`
-  position: relative;
-  left: 110px;
-  top: -5px;
+  position: absolute;
+  left: 10px;
+  top: 100px;
   display: flex;
   flex-direction: row;
   column-gap: 5px;

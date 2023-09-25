@@ -1,8 +1,10 @@
 import {
   ContainerDescriptionItemProject,
   ContainerIconTechnology,
+  ContainerImageItemProject,
   ContainerItemProject,
   ContainerTechnologies,
+  ImageItemProject,
   LineItemProject,
   TextDescriptionItemProject,
   TitleDescriptionItemProject,
@@ -14,7 +16,7 @@ import * as IconsFa from "react-icons/fa";
 import * as IconsBi from "react-icons/bi";
 import React from "react";
 
-const ItemProject = ({ title, description, technologies }) => {
+const ItemProject = ({ title, description, technologies, images, type }) => {
   const checkTypeIcon = (id, tech) => {
     if (id === "tb") {
       return React.createElement(IconsTb[tech]);
@@ -32,9 +34,23 @@ const ItemProject = ({ title, description, technologies }) => {
 
   return (
     <ContainerItemProject>
-      <h1>Video</h1>
-      <LineItemProject />
-      <ContainerDescriptionItemProject>
+      <ContainerImageItemProject>
+        {images
+          .map((image, index) => (
+            <ImageItemProject
+              widthImage={type === "app" ? "100px" : "250px"}
+              heightImage={type === "app" ? "250px" : "180px"}
+              key={index}
+              src={require(`../../assets/projects/${image}`)}
+              alt="project"
+            />
+          ))
+          .reverse()}
+      </ContainerImageItemProject>
+      <LineItemProject topImage={type === "app" ? "10px" : "20px"} />
+      <ContainerDescriptionItemProject
+        topImage={type === "app" ? "10px" : "20px"}
+      >
         <TitleDescriptionItemProject>{title}</TitleDescriptionItemProject>
         <TextDescriptionItemProject>{description}</TextDescriptionItemProject>
         <ContainerTechnologies>
